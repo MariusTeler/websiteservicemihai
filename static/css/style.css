@@ -129,6 +129,42 @@ body {
     line-height: 1.7;
 }
 
+/* Hero Carousel */
+.hero-carousel {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(29, 53, 87, 0.2);
+}
+
+.hero-carousel .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.hero-carousel .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-carousel.slide .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-carousel .carousel-item-next,
+.hero-carousel .carousel-item-prev,
+.hero-carousel .carousel-item.active {
+    display: block;
+}
+
+.hero-carousel.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-carousel.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
 .section-padding { padding: 5rem 0; }
 
 .service-card {
