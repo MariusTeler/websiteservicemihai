@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Service Auto Premium{% endblock %}
+{% block meta_description %}Contacteaza Service Auto Premium - adresa, telefon, program de lucru si harta.{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="section-tag">// Gaseste-ne</div>
+        <h1>Contact</h1>
+    </div>
+</div>
+
+<!-- Contact Info + Map -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Contact Info -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="section-tag">// Informatii de contact</div>
+                <h2 class="section-title">Ia legatura<br>cu noi.</h2>
+
+                <div class="contact-info-item">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h6>Adresa</h6>
+                        <p>Str. Exemplu Nr. 10, Oras, Judet</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h6>Telefon</h6>
+                        <p><a href="tel:0740123456" class="text-decoration-none text-muted">0740 123 456</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h6>Email</h6>
+                        <p><a href="mailto:contact@serviceautopremium.ro" class="text-decoration-none text-muted">contact@serviceautopremium.ro</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon-box"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h6>Program</h6>
+                        <p>Luni - Vineri: 08:00 - 18:00<br>Sambata: 09:00 - 14:00<br>Duminica: Inchis</p>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#" class="social-link me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <div class="rounded overflow-hidden shadow" style="height: 450px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388557397!2d26.1025!3d44.4268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDI1JzM2LjUiTiAyNsKwMDYnMDkuMCJF!5e0!3m2!1sro!2sro!4v1234567890"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container" data-aos="fade-up">
+        <h3>Suna-ne sau treci pe la noi!</h3>
+        <p>Suntem aici sa te ajutam</p>
+        <a href="tel:0740123456" class="cta-phone">
+            <i class="fas fa-phone me-2"></i>0740 123 456
+        </a>
+    </div>
+</section>
+
+{% endblock %}

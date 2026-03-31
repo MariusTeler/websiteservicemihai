@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Service Auto Premium - Service Auto de Incredere{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+                <div class="hero-tag">// Service Auto de Incredere</div>
+                <h1 class="hero-title">
+                    Unde calitatea<br>
+                    intalneste<br>
+                    <span class="accent">performanta.</span>
+                </h1>
+                <p class="hero-description">
+                    Oferim servicii complete de intretinere si reparatii auto cu echipamente
+                    moderne si mecanici cu experienta.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('contact') }}" class="btn btn-accent btn-lg">Contacteaza-ne</a>
+                    <a href="{{ url_for('servicii') }}" class="btn btn-outline-primary-custom btn-lg">Servicii <i class="fas fa-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Servicii Preview -->
+<section class="section-padding bg-light-custom">
+    <div class="container">
+        <div class="section-tag" data-aos="fade-up">// Ce oferim</div>
+        <h2 class="section-title" data-aos="fade-up">Serviciile Noastre</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h4>Mecanica</h4>
+                    <p>Reparatii complete pentru orice tip de autovehicul.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card service-card-alt-1">
+                    <div class="icon" style="color: var(--secondary);"><i class="fas fa-laptop-code"></i></div>
+                    <h4>Diagnoza</h4>
+                    <p>Diagnoza computerizata cu echipamente de ultima generatie.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card service-card-alt-2">
+                    <div class="icon" style="color: var(--primary);"><i class="fas fa-paint-roller"></i></div>
+                    <h4>Vopsitorie</h4>
+                    <p>Tinichigerie si vopsitorie auto la standarde inalte.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-snowflake"></i></div>
+                    <h4>Climatizare</h4>
+                    <p>Verificare, incarcare si reparatii sistem A/C.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4" data-aos="fade-up">
+            <a href="{{ url_for('servicii') }}" class="btn btn-outline-primary-custom">
+                Vezi toate serviciile <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Promisiunile Noastre -->
+<section class="section-padding">
+    <div class="container">
+        <div class="section-tag" data-aos="fade-up">// Angajamentul nostru</div>
+        <h2 class="section-title" data-aos="fade-up">Promisiunile Noastre</h2>
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="promise-card">
+                    <div class="promise-icon"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h5>Garantie pentru lucrari</h5>
+                        <p>Toate reparatiile vin cu garantie scrisa. Lucram responsabil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="promise-card">
+                    <div class="promise-icon"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h5>Piese de calitate</h5>
+                        <p>Folosim doar piese originale sau echivalente certificate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="promise-card">
+                    <div class="promise-icon"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h5>Preturi transparente</h5>
+                        <p>Deviz detaliat inainte de orice interventie. Fara surprize.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="promise-card">
+                    <div class="promise-icon"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h5>Termen respectat</h5>
+                        <p>Iti spunem exact cand e gata si ne tinem de cuvant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- De Ce Sa Ne Alegi -->
+<section class="why-section">
+    <div class="container">
+        <div class="section-tag" style="color: rgba(255,255,255,0.4);" data-aos="fade-up">// De ce noi</div>
+        <h2 class="section-title" style="color: white;" data-aos="fade-up">De Ce Sa Ne Alegi</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="why-item">
+                    <h5>Echipamente Moderne</h5>
+                    <p>Tehnologie de ultima generatie pentru diagnosticare si reparatii precise.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-item">
+                    <h5>Mecanici Calificati</h5>
+                    <p>Echipa cu experienta dovedita si cursuri de specializare continue.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="why-item">
+                    <h5>Fara Surprize</h5>
+                    <p>Comunicare directa cu mecanicul. Stii mereu ce se intampla cu masina ta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container" data-aos="fade-up">
+        <h3>Ai nevoie de un service serios?</h3>
+        <p>Suna-ne acum sau treci pe la noi</p>
+        <a href="tel:0740123456" class="cta-phone">
+            <i class="fas fa-phone me-2"></i>0740 123 456
+        </a>
+    </div>
+</section>
+
+{% endblock %}

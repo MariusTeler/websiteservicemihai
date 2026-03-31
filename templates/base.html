@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Service Auto Premium{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Service Auto Premium - Servicii complete de intretinere si reparatii auto. Mecanica, diagnoza, electrica, vopsitorie.{% endblock %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-black" href="{{ url_for('index') }}">
+                SERVICE AUTO <span class="text-accent">PREMIUM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Acasa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('servicii') }}">Servicii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('despre') }}">Despre Noi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('galerie') }}">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent btn-sm" href="{{ url_for('contact') }}">
+                            <i class="fas fa-phone me-1"></i> Suna Acum
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-black text-white mb-3">SERVICE AUTO <span class="text-accent">PREMIUM</span></h5>
+                    <p class="text-white-50 small">Servicii complete de intretinere si reparatii auto. Calitate, profesionalism si preturi corecte.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h6 class="text-white fw-bold mb-3">Linkuri Rapide</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url_for('index') }}" class="footer-link">Acasa</a></li>
+                        <li><a href="{{ url_for('servicii') }}" class="footer-link">Servicii</a></li>
+                        <li><a href="{{ url_for('despre') }}" class="footer-link">Despre Noi</a></li>
+                        <li><a href="{{ url_for('galerie') }}" class="footer-link">Galerie</a></li>
+                        <li><a href="{{ url_for('contact') }}" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-accent me-2"></i> Str. Exemplu Nr. 10, Oras</li>
+                        <li class="mb-2"><i class="fas fa-phone text-accent me-2"></i> 0740 123 456</li>
+                        <li class="mb-2"><i class="fas fa-envelope text-accent me-2"></i> contact@serviceautopremium.ro</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="#" class="social-link me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4 mb-3">
+            <p class="text-center text-white-50 small mb-0">&copy; 2026 Service Auto Premium. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

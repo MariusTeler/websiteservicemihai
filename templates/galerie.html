@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Galerie - Service Auto Premium{% endblock %}
+{% block meta_description %}Galerie foto Service Auto Premium - imagini din activitatea noastra.{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="section-tag">// Portofoliul nostru</div>
+        <h1>Galerie Foto</h1>
+    </div>
+</div>
+
+<!-- Gallery -->
+<section class="section-padding">
+    <div class="container">
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4 gallery-filter" data-aos="fade-up">
+            <button class="btn btn-outline-secondary active" data-filter="all">Toate</button>
+            <button class="btn btn-outline-secondary" data-filter="mecanica">Mecanica</button>
+            <button class="btn btn-outline-secondary" data-filter="vopsitorie">Vopsitorie</button>
+            <button class="btn btn-outline-secondary" data-filter="echipamente">Echipamente</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="mecanica" data-aos="fade-up">
+                <a href="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&h=250&fit=crop" alt="Mecanica" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="echipamente" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=250&fit=crop" alt="Echipamente" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="vopsitorie" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://images.unsplash.com/photo-1603553329474-99f95f35394f?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1603553329474-99f95f35394f?w=400&h=250&fit=crop" alt="Vopsitorie" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="mecanica" data-aos="fade-up">
+                <a href="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=400&h=250&fit=crop" alt="Mecanica" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="echipamente" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=250&fit=crop" alt="Echipamente" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="vopsitorie" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=800" class="glightbox" data-gallery="gallery1">
+                    <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=400&h=250&fit=crop" alt="Vopsitorie" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
