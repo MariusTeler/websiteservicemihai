@@ -83,7 +83,8 @@ body {
 }
 
 .navbar-logo {
-    height: 55px;
+    height: 45px;
+    max-height: 45px;
     width: auto;
 }
 
@@ -97,7 +98,8 @@ body {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 70px;
+    max-height: 70px;
     width: auto;
 }
 
