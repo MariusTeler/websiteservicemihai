@@ -139,6 +139,24 @@
     </div>
 </section>
 
+<!-- Anunturi -->
+{% if anunt %}
+<section class="section-padding bg-light-custom anunt-section" id="anunturi">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+            <div>
+                <div class="section-tag" data-aos="fade-up">// Noutati</div>
+                <h2 class="section-title mb-0" data-aos="fade-up">Anunturi</h2>
+            </div>
+            <a href="{{ url_for('anunturi') }}" class="btn btn-outline-primary-custom" data-aos="fade-up">
+                Toate anunturile <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+        </div>
+        {% include "_anunt_card.html" %}
+    </div>
+</section>
+{% endif %}
+
 <!-- De Ce Sa Ne Alegi -->
 <section class="why-section">
     <div class="container">

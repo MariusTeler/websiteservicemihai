@@ -1,0 +1,35 @@
+<div class="anunt-card">
+    <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-md-5 col-lg-4 text-center" data-aos="fade-right">
+            <a href="{{ url_for('static', filename=anunt.imagine_full) }}" class="glightbox anunt-poster" data-gallery="anunt-{{ anunt.slug }}" data-title="{{ anunt.titlu }}">
+                <img src="{{ url_for('static', filename=anunt.imagine) }}" alt="{{ anunt.titlu }}" class="img-fluid">
+                <span class="anunt-poster-zoom"><i class="fas fa-search-plus"></i></span>
+            </a>
+        </div>
+        <div class="col-md-7 col-lg-8" data-aos="fade-left">
+            <div class="anunt-meta">
+                <span class="anunt-badge">{{ anunt.eticheta }}</span>
+                <span class="anunt-date">{{ anunt.data }}</span>
+            </div>
+            <h3 class="anunt-title">{{ anunt.titlu }}</h3>
+            <p class="anunt-description">{{ anunt.descriere }}</p>
+            {% if anunt.beneficii %}
+            <ul class="anunt-benefits">
+                {% for b in anunt.beneficii %}
+                <li><span class="anunt-check"><i class="fas fa-check"></i></span>{{ b }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if anunt.telefoane %}
+            <div class="anunt-contact">
+                <span class="anunt-contact-label">Contacteaza-ne:</span>
+                <div class="d-flex flex-wrap gap-2">
+                    {% for tel in anunt.telefoane %}
+                    <a href="tel:{{ tel | replace(' ', '') }}" class="btn btn-accent"><i class="fas fa-phone me-2"></i>{{ tel }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

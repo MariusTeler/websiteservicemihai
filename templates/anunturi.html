@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Anunturi - Willy Car Service{% endblock %}
+{% block meta_description %}Anunturi Willy Car Service - angajari, noutati si oferte din service-ul nostru din Domnesti, Ilfov.{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="section-tag">// Noutati</div>
+        <h1>Anunturi</h1>
+    </div>
+</div>
+
+<section class="section-padding">
+    <div class="container">
+        {% if anunturi %}
+        <div class="d-flex flex-column gap-4 gap-lg-5">
+            {% for anunt in anunturi %}
+            {% include "_anunt_card.html" %}
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="text-center py-5" data-aos="fade-up">
+            <div class="anunt-empty-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3 class="section-title">Momentan nu avem anunturi</h3>
+            <p class="text-muted">Revino curand sau contacteaza-ne direct.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-accent mt-2">Contact</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}
